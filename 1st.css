@@ -1,0 +1,133 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    text-align: center;
+    margin: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 100px;
+  }
+  
+  .mytype{
+    .mytype h1{
+      color:black,
+    }
+  }
+  
+  a {
+    color: white;
+    column-gap: 100%;
+  }
+  
+  
+  .mydiv {
+  
+    background-color: lightgrey;
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0%;
+    align-content: center;
+    color: black;
+    align-items: center;
+    border: black;
+  }
+
+  .wgcal {
+  
+    background-color: lightgrey;
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0%;
+    align-content: center;
+    color: black;
+    align-items: center;
+    border: black;
+  }
+
+
+  .tempcal {
+  
+    background-color: lightgrey;
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0%;
+    align-content: center;
+    color: black;
+    align-items: center;
+    border: black;
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: darkblue;
+    color: white;
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+#celestialObjectSelection {
+    margin: 20px;
+}
+
+#resultBox {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resultBox1 {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resultBox2 {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    font-weight: bold;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Hole Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Black Hole Quiz</h1>
+    <form id="blackHoleQuizForm">
+        <ol>
+            <li>
+                <strong>What is a black hole?</strong><br>
+                <label><input type="radio" name="q1" value="a"> a) A collapsed star with infinite density</label>
+                <label><input type="radio" name="q1" value="b"> b) A region in space with no gravity</label>
+                <label><input type="radio" name="q1" value="c"> c) A type of dark matter</label>
+                <label><input type="radio" name="q1" value="d"> d) A highly luminous star</label>
+            </li>
+            <li>
+                <strong>What is the boundary surrounding a black hole beyond which nothing can escape?</strong><br>
+                <label><input type="radio" name="q2" value="a"> a) Event Horizon</label>
+                <label><input type="radio" name="q2" value="b"> b) Singularity</label>
+                <label><input type="radio" name="q2" value="c"> c) Ergosphere</label>
+                <label><input type="radio" name="q2" value="d"> d) Photon Sphere</label>
+            </li>
+            <li>
+                <strong>What is the term for the point of infinite density at the center of a black hole?</strong><br>
+                <label><input type="radio" name="q3" value="a"> a) Singularity</label>
+                <label><input type="radio" name="q3" value="b"> b) Abyss</label>
+                <label><input type="radio" name="q3" value="c"> c) Core</label>
+                <label><input type="radio" name="q3" value="d"> d) Abyss</label>
+            </li>
+            <li>
+                <strong>What is the name of the first black hole to be photographed?</strong><br>
+                <label><input type="radio" name="q4" value="a"> a) Cygnus X-1</label>
+                <label><input type="radio" name="q4" value="b"> b) Sagittarius A*</label>
+                <label><input type="radio" name="q4" value="c"> c) V404 Cygni</label>
+                <label><input type="radio" name="q4" value="d"> d) M87*</label>
+            </li>
+            <li>
+                <strong>What is the phenomenon where light is bent as it passes near a massive object like a black hole?</strong><br>
+                <label><input type="radio" name="q5" value="a"> a) Gravitational Lensing</label>
+                <label><input type="radio" name="q5" value="b"> b) Refraction</label>
+                <label><input type="radio" name="q5" value="c"> c) Diffraction</label>
+                <label><input type="radio" name="q5" value="d"> d) Reflection</label>
+            </li>
+            <li>
+                <strong>What is the term for a black hole that has absorbed a significant amount of matter and radiation?</strong><br>
+                <label><input type="radio" name="q6" value="a"> a) Quasar</label>
+                <label><input type="radio" name="q6" value="b"> b) Stellar Black Hole</label>
+                <label><input type="radio" name="q6" value="c"> c) Supermassive Black Hole</label>
+                <label><input type="radio" name="q6" value="d"> d) Intermediate Black Hole</label>
+            </li>
+            <li>
+                <strong>What is the name of the process by which a black hole emits Hawking radiation and loses mass?</strong><br>
+                <label><input type="radio" name="q7" value="a"> a) Evaporation</label>
+                <label><input type="radio" name="q7" value="b"> b) Accretion</label>
+                <label><input type="radio" name="q7" value="c"> c) Spaghettification</label>
+                <label><input type="radio" name="q7" value="d"> d) Quantum Tunneling</label>
+            </li>
+            <li>
+                <strong>Which physicist proposed the existence of black holes in his theory of general relativity?</strong><br>
+                <label><input type="radio" name="q8" value="a"> a) Isaac Newton</label>
+                <label><input type="radio" name="q8" value="b"> b) Albert Einstein</label>
+                <label><input type="radio" name="q8" value="c"> c) Stephen Hawking</label>
+                <label><input type="radio" name="q8" value="d"> d) Niels Bohr</label>
+            </li>
+            <li>
+                <strong>What is the term for the stretching and elongation of an object near a strong gravitational field, such as a black hole?</strong><br>
+                <label><input type="radio" name="q9" value="a"> a) Time Dilation</label>
+                <label><input type="radio" name="q9" value="b"> b) Spaghettification</label>
+                <label><input type="radio" name="q9" value="c"> c) Wormholing</label>
+                <label><input type="radio" name="q9" value="d"> d) Tidal Forces</label>
+            </li>
+            <li>
+                <strong>What is the largest known type of black hole, found at the centers of galaxies?</strong><br>
+                <label><input type="radio" name="q10" value="a"> a) Micro Black Hole</label>
+                <label><input type="radio" name="q10" value="b"> b) Stellar Black Hole</label>
+                <label><input type="radio" name="q10" value="c"> c) Intermediate Black Hole</label>
+                <label><input type="radio" name="q10" value="d"> d) Supermassive Black Hole</label>
+            </li>
+            <li>
+                <strong>What is the name of the black hole at the center of our Milky Way galaxy?</strong><br>
+                <label><input type="radio" name="q11" value="a"> a) Cygnus X-1</label>
+                <label><input type="radio" name="q11" value="b"> b) Sagittarius A*</label>
+                <label><input type="radio" name="q11" value="c"> c) V404 Cygni</label>
+                <label><input type="radio" name="q11" value="d"> d) M87*</label>
+            </li>
+            <li>
+                <strong>What is the term for a black hole that is not part of a binary system and does not actively accrete matter?</strong><br>
+                <label><input type="radio" name="q12" value="a"> a) Dormant Black Hole</label>
+                <label><input type="radio" name="q12" value="b"> b) Inactive Black Hole</label>
+                <label><input type="radio" name="q12" value="c"> c) Quiescent Black Hole</label>
+                <label><input type="radio" name="q12" value="d"> d) Silent Black Hole</label>
+            </li>
+            <li>
+                <strong>What happens when an object crosses the event horizon of a black hole?</strong><br>
+                <label><input type="radio" name="q13" value="a"> a) It is destroyed instantly</label>
+                <label><input type="radio" name="q13" value="b"> b) It enters a parallel universe</label>
+                <label><input type="radio" name="q13" value="c"> c) It cannot escape</label>
+                <label><input type="radio" name="q13" value="d"> d) It experiences anti-gravity</label>
+            </li>
+            <li>
+                <strong>What is the term for a hypothetical tunnel-like structure that connects two separate points in spacetime?</strong><br>
+                <label><input type="radio" name="q14" value="a"> a) Wormhole</label>
+                <label><input type="radio" name="q14" value="b"> b) Starbridge</label>
+                <label><input type="radio" name="q14" value="c"> c) Spacelift</label>
+                <label><input type="radio" name="q14" value="d"> d) Hyperspace Tube</label>
+            </li>
+            <li>
+                <strong>What is the term for the distortion of time near a massive object, as predicted by general relativity?</strong><br>
+                <label><input type="radio" name="q15" value="a"> a) Time Dilation</label>
+                <label><input type="radio" name="q15" value="b"> b) Time Warp</label>
+                <label><input type="radio" name="q15" value="c"> c) Time Compression</label>
+                <label><input type="radio" name="q15" value="d"> d) Time Bending</label>
+            </li>
+        </ol>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById("blackHoleQuizForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Calculate the score
+            let score = 0;
+            const correctAnswers = ["a", "a", "a", "d", "a", "c", "a", "b", "b", "d", "b", "c", "c", "a", "a"];
+            for (let i = 1; i <= 15; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the results
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = `<p>Your score is: ${score} out of 15</p>`;
+        });
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Activities Experiment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Solar Activities Experiment</h1>
+    <form id="solarExperimentForm">
+        <label for="gravity">Enter gravity on the solar body (m/s²):</label>
+        <input type="number" id="gravity" required>
+
+        <label for="speed">Enter speed on the solar body (m/s):</label>
+        <input type="number" id="speed" required>
+
+        <label for="distance">Enter distance from the sun (AU):</label>
+        <input type="number" id="distance" required>
+
+        <label for="weight">Enter your weight on Earth (N):</label>
+        <input type="number" id="weight" required>
+
+        <label for="time">Enter time duration for the experiment (s):</label>
+        <input type="number" id="time" required>
+
+        <input type="submit" value="Calculate Results">
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById("solarExperimentForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve input values
+            const gravity = parseFloat(document.getElementById("gravity").value);
+            const speed = parseFloat(document.getElementById("speed").value);
+            const distance = parseFloat(document.getElementById("distance").value);
+            const weight = parseFloat(document.getElementById("weight").value);
+            const time = parseFloat(document.getElementById("time").value);
+
+            // Perform calculations
+            const weightOnSolarBody = (gravity * weight) / 9.8;
+            const distanceTraveled = speed * time;
+            const gravityOnSolarBody = gravity / Math.pow(distance, 2);
+            const timeDilation = Math.sqrt(1 - (Math.pow(speed, 2) / Math.pow(299792458, 2))) * time;
+
+            // Display the results
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = `<p>Weight on the solar body: ${weightOnSolarBody.toFixed(2)} N</p>
+                                    <p>Distance traveled: ${distanceTraveled.toFixed(2)} meters</p>
+                                    <p>Gravity on the solar body: ${gravityOnSolarBody.toFixed(6)} m/s²</p>
+                                    <p>Time dilation compared to Earth: ${timeDilation.toFixed(6)} seconds</p>`;
+        });
+    </script>
+</body>
+
+</html>

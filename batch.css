@@ -1,0 +1,41 @@
+body{
+    background-color: white
+}
+@media screen and (max-width: 1300px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  .menuitems{
+    FONT-WEIGHT: 500;
+    display: flex;
+    margin-left: 39%;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    gap: 50px;
+    font-size: 17px;
+    color: black;
+    list-style: none;
+    align-content: center;
+    animation: fadeInAnimationmenu ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .menu a{
+    color: #000;
+    text-decoration: none;
+    font-style: arial;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+  }
+#myCanvas{
+  margin-left: 42%;
+}
+canvas {
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

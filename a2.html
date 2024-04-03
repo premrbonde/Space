@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Activities Experiment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Solar Activities Experiment</h1>
+
+    <button onclick="calculateGravity()">Calculate Gravity</button>
+    <button onclick="calculateSpeed()">Calculate Speed</button>
+    <button onclick="calculateDistance()">Calculate Distance</button>
+    <button onclick="calculateHumanWeight()">Calculate Human Weight</button>
+    <button onclick="calculateTime()">Calculate Time</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateGravity() {
+            // Perform gravity calculation (example: on Mars)
+            const gravityOnMars = 3.72076; // in m/s^2
+            displayResult(`Gravity on Mars: ${gravityOnMars} m/s²`);
+        }
+
+        function calculateSpeed() {
+            // Perform speed calculation (example: Earth's orbit around the Sun)
+            const earthOrbitSpeed = 29784; // in meters per second
+            displayResult(`Earth's orbit speed around the Sun: ${earthOrbitSpeed} m/s`);
+        }
+
+        function calculateDistance() {
+            // Perform distance calculation (example: Earth to the Sun)
+            const earthToSunDistance = 149.6e9; // in meters
+            displayResult(`Distance from Earth to the Sun: ${earthToSunDistance} meters`);
+        }
+
+        function calculateHumanWeight() {
+            // Perform human weight calculation (example: on Jupiter)
+            const weightOnJupiter = calculateWeightOnAnotherPlanet(26); // Assuming weight on Earth is 70 kg
+            displayResult(`Your weight on Jupiter: ${weightOnJupiter.toFixed(2)} kg`);
+        }
+
+        function calculateTime() {
+            // Perform time calculation (example: Earth's rotation period)
+            const earthRotationPeriod = 86400; // in seconds
+            displayResult(`One day on Earth is approximately ${earthRotationPeriod} seconds`);
+        }
+
+        function calculateWeightOnAnotherPlanet(weightOnEarth) {
+            // Assume weight is directly proportional to gravity
+            const gravityOnJupiter = 24.79; // in m/s^2
+            return weightOnEarth * gravityOnJupiter / 9.8;
+        }
+
+        function displayResult(result) {
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+body{
+    background-color: white
+}
+.menuitems{
+  FONT-WEIGHT: 500;
+  display: flex;
+  margin-left: 39%;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  gap: 50px;
+  font-size: 17px;
+  color: black;
+  list-style: none;
+  align-content: center;
+  animation: fadeInAnimationmenu ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimationmenu {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+.menu a{
+  color: #000;
+  text-decoration: none;
+  font-style: arial;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+#myCanvas{
+  margin-left: 42%;
+}
+canvas {
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+.banner{
+    margin-top: 1%;
+}
+.login_btn{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 30px;
+  width: 80px;
+  border-radius: 20px;
+  }
+.login_btn:hover{
+    color: black;
+    background-color: gray;
+}
+.reg_btn{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 115px;
+  width: 90px;
+  border-radius: 20px;
+}
+.reg_btn:hover{
+    color: black;
+    background-color: gray;
+}
+  .log {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .login {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .login input[type=text], .login input[type=password] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .login input[type=text]:focus, .login input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .login .lbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .lcancle {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .reg {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .registration {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .registration input[type=text], .registration input[type=password] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .registration input[type=text]:focus, .registration input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .registration .rbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .rcancle {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .banner .img1 {
+    margin-left: 62%;
+    width: 25%;
+    height: 25%;
+    position: relative;
+    animation: mymove 2s 1 forwards;
+  }
+  @keyframes mymove {
+    from {left: 0;}
+    to {left: 10%;}
+  }
+  @keyframes mymovet {
+    from {right: 0;}
+    to {right: 10%;}
+  }
+  .banner .img2{
+    margin-top: -50%;
+    margin-left: 64%;
+    width: 25%;
+    height: 25%;
+    position: relative;
+    animation: mymovet 2s 1 forwards;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+  @keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  .animated-title {
+    color: #222;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    left: 30%;
+    position: absolute;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 9vmin; 
+    padding: 2vmin 0;
+    position: absolute;
+}
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #000;
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: #767676;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }

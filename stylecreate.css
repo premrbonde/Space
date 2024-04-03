@@ -1,0 +1,145 @@
+body {
+	margin: 5px;
+	background: linear-gradient(to top, rgba(0,0,0,0.5)70%,rgba(0,0,0,0.5)70%),url(1.jpg);
+	background-size: cover;
+    background-position: center;
+	filter: blur();
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 440px;
+	height: 540px;
+	border: 2px solid #ccc;
+	padding: 20px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: -8px;
+	margin-bottom: 15px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 8px;
+	margin: 5px auto;
+	border-radius: 5px;
+}
+
+span {
+	display: flex;
+	justify-content: center;
+	color: #252525;
+	font-size: 19px;
+	padding: 1px;
+}
+
+.btn1 {
+	float: right;
+	background: #033c67;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+.btn1:hover{
+	opacity: .7;
+}
+
+
+.button1 {
+	float: right;
+	background: #033c67;
+	padding: 10px 13px;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: -43px;
+	margin-right: -6px;
+	border: none;
+}
+.button1:hover{
+	opacity: .7;
+}
+
+.error {
+	font-family: monospace;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+    align-items: center;
+    color: #A94442;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.success {
+	font-family: monospace;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #40754C;
+    padding: 5%;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+h1 {
+	text-align: center;
+	padding: -10px;
+	color: #fff;
+}
+
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	padding-right: 0px;
+	text-decoration: none;
+	color: #444444;
+}
+.ca:hover {
+	text-decoration: none;
+	color: rgb(46, 46, 46);
+}
+
+.ca1 {
+	font-size: 14px;
+	display: inline-block;
+	padding: 1px;
+	text-decoration: none;
+	color: #008adf;
+}
+.ca1:hover {
+	text-decoration: none;
+	color: #08a0ff;
+}
+
+.ca2 {
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+	color: #000102;
+}

@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA___CE</title>
+    <link rel="stylesheet" href="home.css" />
+    <script src="file.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="home.html"><canvas id="myCanvas" width="230" height="60"></canvas></a>
+        <script>
+          var canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.font = "50px italic";
+          var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+          gradient.addColorStop(0, "black");
+          gradient.addColorStop(1, "black");
+          ctx.fillStyle = gradient;
+          ctx.fillText("SPA__CE", 10, 50);
+        </script>
+        <div class="menu">
+          <div class="menuitems">
+          <a href="tshirt.html"><li>T-shirt</li></a>
+          <a href="#"><li>Shirts</li></a>
+          <a href="caps.html"><li>Caps</li></a>
+          <a href="batch.html"><li>Batches</li></a>
+          </div>
+        </div>
+    </header>
+    <div>
+        <a href="login2.php"><button class="login_btn">Log-in</button></a>
+        <a href="register2.php"><button class="reg_btn">Register</button></a>
+    </div>
+    </div>
+    <div class="bann" style="border-bottom: solid 1px gray; border-top: solid 1px gray; margin-top: 2px;padding: 1px 1px 1px 1px;">
+      <div class="animated-title">
+        <div class="text-top">
+          <div>
+            <span>Explor the latest fashion</span>
+            <span>Grab now</span>
+          </div>
+        </div>
+        <div class="text-bottom">
+          <div>Just for you</div>
+        </div>
+      </div>
+    <div class="banner">
+      <img class="img1" src="hero.png" alt="">
+      <img class="img2" src="hero2.png" alt="">
+    </div>
+  </body>
+</html>

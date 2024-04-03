@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Stars Quiz</h1>
+    <form id="starsQuizForm">
+        <ol>
+            <li>
+                <strong>What is the closest star to Earth?</strong><br>
+                <label><input type="radio" name="q1" value="a"> a) Alpha Centauri</label>
+                <label><input type="radio" name="q1" value="b"> b) Proxima Centauri</label>
+                <label><input type="radio" name="q1" value="c"> c) Betelgeuse</label>
+                <label><input type="radio" name="q1" value="d"> d) Sirius</label>
+            </li>
+            <li>
+                <strong>Which color is associated with the coolest stars?</strong><br>
+                <label><input type="radio" name="q2" value="a"> a) Blue</label>
+                <label><input type="radio" name="q2" value="b"> b) Red</label>
+                <label><input type="radio" name="q2" value="c"> c) Yellow</label>
+                <label><input type="radio" name="q2" value="d"> d) White</label>
+            </li>
+            <li>
+                <strong>What is the process by which stars generate energy?</strong><br>
+                <label><input type="radio" name="q3" value="a"> a) Fusion</label>
+                <label><input type="radio" name="q3" value="b"> b) Fission</label>
+                <label><input type="radio" name="q3" value="c"> c) Combustion</label>
+                <label><input type="radio" name="q3" value="d"> d) Sublimation</label>
+            </li>
+            <li>
+                <strong>What is the lifecycle of a star similar in mass to the Sun?</strong><br>
+                <label><input type="radio" name="q4" value="a"> a) Main Sequence → Red Giant → Supernova → Neutron Star</label>
+                <label><input type="radio" name="q4" value="b"> b) Main Sequence → Red Supergiant → Supernova → Neutron Star</label>
+                <label><input type="radio" name="q4" value="c"> c) Main Sequence → White Dwarf</label>
+                <label><input type="radio" name="q4" value="d"> d) Main Sequence → Red Dwarf → Planetary Nebula</label>
+            </li>
+            <li>
+                <strong>What is the name of the process by which a star explodes, releasing a burst of energy?</strong><br>
+                <label><input type="radio" name="q5" value="a"> a) Nova</label>
+                <label><input type="radio" name="q5" value="b"> b) Supernova</label>
+                <label><input type="radio" name="q5" value="c"> c) Hypernova</label>
+                <label><input type="radio" name="q5" value="d"> d) Stellar Flare</label>
+            </li>
+            <li>
+                <strong>Which star is known as the "Dog Star" and is the brightest in Earth's night sky?</strong><br>
+                <label><input type="radio" name="q6" value="a"> a) Betelgeuse</label>
+                <label><input type="radio" name="q6" value="b"> b) Procyon</label>
+                <label><input type="radio" name="q6" value="c"> c) Sirius</label>
+                <label><input type="radio" name="q6" value="d"> d) Vega</label>
+            </li>
+            <li>
+                <strong>What is the name of the process where a star collapses under gravity, forming a dense core?</strong><br>
+                <label><input type="radio" name="q7" value="a"> a) Fusion</label>
+                <label><input type="radio" name="q7" value="b"> b) Accretion</label>
+                <label><input type="radio" name="q7" value="c"> c) Core Collapse</label>
+                <label><input type="radio" name="q7" value="d"> d) Stellar Wind</label>
+            </li>
+            <li>
+                <strong>What is the name of a pair of stars that orbit around a common center of mass?</strong><br>
+                <label><input type="radio" name="q8" value="a"> a) Binary Stars</label>
+                <label><input type="radio" name="q8" value="b"> b) Singular Stars</label>
+                <label><input type="radio" name="q8" value="c"> c) Trinary Stars</label>
+                <label><input type="radio" name="q8" value="d"> d) Variable Stars</label>
+            </li>
+            <li>
+                <strong>What is the measure of a star's brightness as observed from Earth?</strong><br>
+                <label><input
+                    type="radio" name="q9" value="a"> a) Luminosity</label>
+                    <label><input type="radio" name="q9" value="b"> b) Magnitude</label>
+                    <label><input type="radio" name="q9" value="c"> c) Flux</label>
+                    <label><input type="radio" name="q9" value="d"> d) Radiance</label>
+                </li>
+                <li>
+                    <strong>Which famous star cluster is known as the "Seven Sisters"?</strong><br>
+                    <label><input type="radio" name="q10" value="a"> a) Pleiades</label>
+                    <label><input type="radio" name="q10" value="b"> b) Hyades</label>
+                    <label><input type="radio" name="q10" value="c"> c) Beehive Cluster</label>
+                    <label><input type="radio" name="q10" value="d"> d) Orion Nebula</label>
+                </li>
+                <li>
+                    <strong>What is the phenomenon where a star's light is temporarily obscured by another celestial body?</strong><br>
+                    <label><input type="radio" name="q11" value="a"> a) Eclipse</label>
+                    <label><input type="radio" name="q11" value="b"> b) Occultation</label>
+                    <label><input type="radio" name="q11" value="c"> c) Transient Brightening</label>
+                    <label><input type="radio" name="q11" value="d"> d) Stellar Flare</label>
+                </li>
+                <li>
+                    <strong>What is the term for a dying star that ejects its outer layers, creating a glowing shell of gas?</strong><br>
+                    <label><input type="radio" name="q12" value="a"> a) White Dwarf</label>
+                    <label><input type="radio" name="q12" value="b"> b) Red Giant</label>
+                    <label><input type="radio" name="q12" value="c"> c) Planetary Nebula</label>
+                    <label><input type="radio" name="q12" value="d"> d) Supernova</label>
+                </li>
+                <li>
+                    <strong>What is the name of the region in space where stars are born from interstellar gas and dust?</strong><br>
+                    <label><input type="radio" name="q13" value="a"> a) Stellar Nursery</label>
+                    <label><input type="radio" name="q13" value="b"> b) Galactic Core</label>
+                    <label><input type="radio" name="q13" value="c"> c) Nebula</label>
+                    <label><input type="radio" name="q13" value="d"> d) Accretion Disk</label>
+                </li>
+                <li>
+                    <strong>What is the term for a star that has exhausted the nuclear fuel in its core?</strong><br>
+                    <label><input type="radio" name="q14" value="a"> a) Protostar</label>
+                    <label><input type="radio" name="q14" value="b"> b) T Tauri star</label>
+                    <label><input type="radio" name="q14" value="c"> c) Red Dwarf</label>
+                    <label><input type="radio" name="q14" value="d"> d) White Dwarf</label>
+                </li>
+                <li>
+                    <strong>What is the name of the giant star in the constellation Orion's shoulder?</strong><br>
+                    <label><input type="radio" name="q15" value="a"> a) Betelgeuse</label>
+                    <label><input type="radio" name="q15" value="b"> b) Rigel</label>
+                    <label><input type="radio" name="q15" value="c"> c) Aldebaran</label>
+                    <label><input type="radio" name="q15" value="d"> d) Antares</label>
+                </li>
+            </ol>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results"></div>
+    
+        <script>
+            document.getElementById("starsQuizForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Calculate the score
+                let score = 0;
+                const correctAnswers = ["b", "b", "a", "b", "b", "c", "c", "a", "a", "a", "b", "c", "d", "b", "a"];
+                for (let i = 1; i <= 15; i++) {
+                    const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (selectedAnswer) {
+                        if (selectedAnswer.value === correctAnswers[i - 1]) {
+                            score++;
+                        }
+                    }
+                }
+    
+                // Display the results
+                const resultsDiv = document.getElementById("results");
+                resultsDiv.innerHTML = `<p>Your score is: ${score} out of 15</p>`;
+            });
+        </script>
+    </body>
+    
+    </html>
+    
