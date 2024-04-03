@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+}
+
+.mytype{
+  .mytype h1{
+    color:black,
+  }
+}
+
+a {
+  color: white;
+  column-gap: 100%;
+}
+
+
+.mydiv {
+
+  background-color: lightgrey;
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
+  padding: 0%;
+  align-content: center;
+  color: black;
+  align-items: center;
+  border: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkblue;
+  color: white;
+}
+
+.p1::after {
+    content: 'space';
+    color: blue;
+    border: 1px solid blue;
+    inline-size: 1;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: blue   ;
+}
+
+ 

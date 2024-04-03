@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Space Quiz</h1>
+    <form id="spaceQuizForm">
+        <ol>
+            <li>
+                <strong>What is the largest planet in our solar system?</strong><br>
+                <label><input type="radio" name="q1" value="b"> b) Jupiter</label>
+                <label><input type="radio" name="q1" value="c"> c) Saturn</label>
+                <label><input type="radio" name="q1" value="a"> a) Venus</label>
+                <label><input type="radio" name="q1" value="d"> d) Uranus</label>
+            </li>
+            <li>
+                <strong>Which galaxy do we live in?</strong><br>
+                <label><input type="radio" name="q2" value="a"> a) Andromeda</label>
+                <label><input type="radio" name="q2" value="b"> b) Milky Way</label>
+                <label><input type="radio" name="q2" value="c"> c) Triangulum</label>
+                <label><input type="radio" name="q2" value="d"> d) Sombrero</label>
+            </li>
+            <li>
+                <strong>What is the name of the first artificial satellite launched into space?</strong><br>
+                <label><input type="radio" name="q3" value="a"> a) Sputnik 1</label>
+                <label><input type="radio" name="q3" value="b"> b) Explorer 1</label>
+                <label><input type="radio" name="q3" value="c"> c) Vanguard 1</label>
+                <label><input type="radio" name="q3" value="d"> d) Hubble</label>
+            </li>
+            <li>
+                <strong>Which planet is known as the "Red Planet"?</strong><br>
+                <label><input type="radio" name="q4" value="b"> b) Mars</label>
+                <label><input type="radio" name="q4" value="a"> a) Venus</label>
+                <label><input type="radio" name="q4" value="c"> c) Jupiter</label>
+                <label><input type="radio" name="q4" value="d"> d) Mercury</label>
+            </li>
+            <li>
+                <strong>What is the process by which a star produces energy?</strong><br>
+                <label><input type="radio" name="q5" value="a"> a) Fusion</label>
+                <label><input type="radio" name="q5" value="b"> b) Fission</label>
+                <label><input type="radio" name="q5" value="c"> c) Sublimation</label>
+                <label><input type="radio" name="q5" value="d"> d) Condensation</label>
+            </li>
+            <li>
+                <strong>Which moon of Jupiter is known for its ice-covered ocean?</strong><br>
+                <label><input type="radio" name="q6" value="c"> c) Europa</label>
+                <label><input type="radio" name="q6" value="b"> b) Ganymede</label>
+                <label><input type="radio" name="q6" value="a"> a) Io</label>
+                <label><input type="radio" name="q6" value="d"> d) Callisto</label>
+            </li>
+            <li>
+                <strong>What is the name of the largest volcano in our solar system, located on Mars?</strong><br>
+                <label><input type="radio" name="q7" value="a"> a) Olympus Mons</label>
+                <label><input type="radio" name="q7" value="b"> b) Mount Everest</label>
+                <label><input type="radio" name="q7" value="c"> c) Mauna Kea</label>
+                <label><input type="radio" name="q7" value="d"> d) Vesuvius</label>
+            </li>
+            <li>
+                <strong>What is a light-year?</strong><br>
+                <label><input type="radio" name="q8" value="a"> a) A unit of time</label>
+                <label><input type="radio" name="q8" value="b"> b) A unit of distance</label>
+                <label><input type="radio" name="q8" value="c"> c) A measure of brightness</label>
+                <label><input type="radio" name="q8" value="d"> d) A unit of temperature</label>
+            </li>
+            <li>
+                <strong>What is the name of the region beyond Neptune that contains many small, icy objects?</strong><br>
+                <label><input type="radio" name="q9" value="a"> a) Oort Cloud</label>
+                <label><input type="radio" name="q9" value="b"> b) Asteroid Belt</label>
+                <label><input type="radio
+                    " name="q9" value="c"> c) Kuiper Belt</label>
+                    <label><input type="radio" name="q9" value="d"> d) Scattered Disk</label>
+                </li>
+                <li>
+                    <strong>What is the name of the famous space telescope launched in 1990?</strong><br>
+                    <label><input type="radio" name="q10" value="a"> a) Kepler</label>
+                    <label><input type="radio" name="q10" value="b"> b) Hubble</label>
+                    <label><input type="radio" name="q10" value="c"> c) Chandra</label>
+                    <label><input type="radio" name="q10" value="d"> d) Spitzer</label>
+                </li>
+                <li>
+                    <strong>Which constellation contains the North Star (Polaris)?</strong><br>
+                    <label><input type="radio" name="q11" value="a"> a) Orion</label>
+                    <label><input type="radio" name="q11" value="b"> b) Ursa Major</label>
+                    <label><input type="radio" name="q11" value="c"> c) Leo</label>
+                    <label><input type="radio" name="q11" value="d"> d) Pegasus</label>
+                </li>
+                <li>
+                    <strong>What is the phenomenon where light is bent as it passes through a gravitational field?</strong><br>
+                    <label><input type="radio" name="q12" value="a"> a) Refraction</label>
+                    <label><input type="radio" name="q12" value="b"> b) Diffraction</label>
+                    <label><input type="radio" name="q12" value="c"> c) Reflection</label>
+                    <label><input type="radio" name="q12" value="d"> d) Gravitational Lensing</label>
+                </li>
+                <li>
+                    <strong>What is the densest type of celestial object that can result from a massive star's collapse?</strong><br>
+                    <label><input type="radio" name="q13" value="a"> a) Neutron Star</label>
+                    <label><input type="radio" name="q13" value="b"> b) Black Hole</label>
+                    <label><input type="radio" name="q13" value="c"> c) White Dwarf</label>
+                    <label><input type="radio" name="q13" value="d"> d) Pulsar</label>
+                </li>
+                <li>
+                    <strong>What is the name of the famous mission that landed humans on the Moon for the first time?</strong><br>
+                    <label><input type="radio" name="q14" value="a"> a) Apollo 11</label>
+                    <label><input type="radio" name="q14" value="b"> b) Gemini 7</label>
+                    <label><input type="radio" name="q14" value="c"> c) Mercury 6</label>
+                    <label><input type="radio" name="q14" value="d"> d) Apollo 13</label>
+                </li>
+                <li>
+                    <strong>What is the name of the supermassive black hole at the center of our Milky Way galaxy?</strong><br>
+                    <label><input type="radio" name="q15" value="a"> a) Sagittarius A*</label>
+                    <label><input type="radio" name="q15" value="b"> b) V404 Cygni</label>
+                    <label><input type="radio" name="q15" value="c"> c) Messier 87</label>
+                    <label><input type="radio" name="q15" value="d"> d) Centaurus A</label>
+                </li>
+            </ol>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results"></div>
+    
+        <script>
+            document.getElementById("spaceQuizForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Calculate the score
+                let score = 0;
+                const correctAnswers = ["b", "b", "a", "b", "a", "c", "a", "b", "c", "b", "d", "a", "a", "a", "a"];
+                for (let i = 1; i <= 15; i++) {
+                    const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (selectedAnswer) {
+                        if (selectedAnswer.value === correctAnswers[i - 1]) {
+                            score++;
+                        }
+                    }
+                }
+    
+                // Display the results
+                const resultsDiv = document.getElementById("results");
+                resultsDiv.innerHTML = `<p>Your score is: ${score} out of 15</p>`;
+            });
+        </script>
+    </body>
+    
+    </html>
+    

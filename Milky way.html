@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Way Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Milky Way Quiz</h1>
+    <form id="milkyWayQuizForm">
+        <ol>
+            <li>
+                <strong>What type of galaxy is the Milky Way?</strong><br>
+                <label><input type="radio" name="q1" value="a"> a) Elliptical</label>
+                <label><input type="radio" name="q1" value="b"> b) Spiral</label>
+                <label><input type="radio" name="q1" value="c"> c) Irregular</label>
+                <label><input type="radio" name="q1" value="d"> d) Lenticular</label>
+            </li>
+            <li>
+                <strong>Approximately how many stars are estimated to be in the Milky Way?</strong><br>
+                <label><input type="radio" name="q2" value="a"> a) 100 million</label>
+                <label><input type="radio" name="q2" value="b"> b) 500 million</label>
+                <label><input type="radio" name="q2" value="c"> c) 1 billion</label>
+                <label><input type="radio" name="q2" value="d"> d) 100 billion</label>
+            </li>
+            <li>
+                <strong>What is the central region of the Milky Way called?</strong><br>
+                <label><input type="radio" name="q3" value="a"> a) Galactic Core</label>
+                <label><input type="radio" name="q3" value="b"> b) Orion Arm</label>
+                <label><input type="radio" name="q3" value="c"> c) Perseus Arm</label>
+                <label><input type="radio" name="q3" value="d"> d) Sagittarius Arm</label>
+            </li>
+            <li>
+                <strong>What is the name of the dwarf galaxy that is a satellite of the Milky Way?</strong><br>
+                <label><input type="radio" name="q4" value="a"> a) Andromeda</label>
+                <label><input type="radio" name="q4" value="b"> b) Large Magellanic Cloud</label>
+                <label><input type="radio" name="q4" value="c"> c) Triangulum</label>
+                <label><input type="radio" name="q4" value="d"> d) Sculptor</label>
+            </li>
+            <li>
+                <strong>Which of the following objects is located at the center of the Milky Way?</strong><br>
+                <label><input type="radio" name="q5" value="a"> a) A supermassive black hole</label>
+                <label><input type="radio" name="q5" value="b"> b) A neutron star</label>
+                <label><input type="radio" name="q5" value="c"> c) A white dwarf</label>
+                <label><input type="radio" name="q5" value="d"> d) A red giant</label>
+            </li>
+            <li>
+                <strong>What is the name of the spiral arm of the Milky Way that contains our solar system?</strong><br>
+                <label><input type="radio" name="q6" value="c"> c) Orion Arm</label>
+                <label><input type="radio" name="q6" value="b"> b) Perseus Arm</label>
+                <label><input type="radio" name="q6" value="a"> a) Sagittarius Arm</label>
+                <label><input type="radio" name="q6" value="d"> d) Centaurus Arm</label>
+            </li>
+            <li>
+                <strong>What is the name of the galaxy group that includes the Milky Way?</strong><br>
+                <label><input type="radio" name="q7" value="a"> a) Local Group</label>
+                <label><input type="radio" name="q7" value="b"> b) Virgo Cluster</label>
+                <label><input type="radio" name="q7" value="c"> c) Coma Supercluster</label>
+                <label><input type="radio" name="q7" value="d"> d) Fornax Cluster</label>
+            </li>
+            <li>
+                <strong>Which gas is most abundant in the interstellar medium of the Milky Way?</strong><br>
+                <label><input type="radio" name="q8" value="a"> a) Hydrogen</label>
+                <label><input type="radio" name="q8" value="b"> b) Helium</label>
+                <label><input type="radio" name="q8" value="c"> c) Oxygen</label>
+                <label><input type="radio" name="q8" value="d"> d) Nitrogen</label>
+            </li>
+            <li>
+                <strong>What is the name of the galaxy collision that the Milky Way is expected to undergo?</strong><br>
+                <label><input type="radio" name="q9" value="a"> a) Andromeda-Milky Way Collision</label>
+                <label><input type="radio" name="q9" value="b"> b) Triangulum-Milky Way Encounter</label>
+                <label><input type="radio" name="q9" value="c"> c) Sagittarius-Milky Way Merge</label>
+                <label><input type="radio" name="q9" value="d"> d) Sculptor-Milky Way Clash</label>
+            </li>
+            <li>
+                <strong>What is the name of the phenomenon where the Milky Way appears as a band of light in the night sky?</strong><br>
+                <label><input type="radio" name="q10" value="a"> a) Aurora Borealis</label>
+                <label><input type="radio" name="q10" value="b"> b) Zodiacal Light</label>
+                <label><input type="radio" name="q10" value="c"> c) Milky Way Effect</label>
+                <label><input type="radio" name="q10" value="d"> d) Galactic Plane</label>
+            </li>
+            <li>
+                <strong>What is the name of the dark matter halo that surrounds the Milky Way?</strong><br>
+                <label><input type="radio" name="q11" value="a"> a) Virgo Halo</label>
+                <label><input type="radio" name="q11" value="b"> b) Sagittarius Halo</label>
+                <label><input type="radio" name="q11" value="c"> c) Oort Cloud</label>
+                <label><input type="radio" name="q11" value="d"> d) Lambda Halo</label>
+            </li>
+            <li>
+                <strong>What is the name of the telescope that provided a detailed survey of the Milky Way's stars?</strong><br>
+                <label><input type="radio" name="q12" value="a"> a) Hubble Space Telescope</label>
+                <label><input type="radio" name="q12" value="b"> b) Gaia</label>
+                <label><input type="radio" name="q12" value="c"> c) Kepler</label>
+                <label><input type="radio" name="q12" value="d"> d) Chandra X-ray Observatory</label>
+            </li>
+            <li>
+                <strong>Which type of galaxy is thought to be the most common in the universe?</strong><br>
+                <label><input type="radio" name="q13" value="a"> a) Spiral</label>
+                <label><input type="radio" name="q13" value="b"> b) Elliptical</label>
+                <label><input type="radio" name="q13" value="c"> c) Irregular</label>
+                <label><input type="radio" name="q13" value="d"> d) Lenticular</label>
+            </li>
+            <li>
+                <strong>What is the estimated age of the Milky Way?</strong><br>
+                <label><input type="radio" name="q14" value="a"> a) 4 billion years</label>
+                <label><input type="radio" name="q14" value="b"> b) 8 billion years</label>
+                <label><input type="radio" name="q14" value="c"> c) 12 billion years</label>
+                <label><input type="radio" name="q14" value="d"> d) 16 billion years</label>
+            </li>
+            <li>
+                <strong>What is the name of the region in the Milky Way where new stars are born?</strong><br>
+                <label><input type="radio" name="q15" value="a"> a) Galactic Halo</label>
+                <label><input type="radio" name="q15" value="b"> b) Stellar Nursery</label>
+                <label><input type="radio" name="q15" value="c"> c) Galactic Bulge</label>
+                <label><input type="radio" name="q15" value="d"> d) Quasar Zone</label>
+            </li>
+        </ol>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById("milkyWayQuizForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Calculate the score
+            let score = 0;
+            const correctAnswers = ["b", "d", "a", "b", "a", "c", "a", "a", "a", "c", "b", "b", "c", "c", "b"];
+            for (let i = 1; i <= 15; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the results
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = `<p>Your score is: ${score} out of 15</p>`;
+        });
+    </script>
+</body>
+

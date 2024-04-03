@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Activities Experiment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #celestialObjectSelection {
+            margin: 20px;
+        }
+
+        #resultBox {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Celestial Activities Experiment</h1>
+
+    <div id="celestialObjectSelection">
+        <label><input type="radio" name="celestialObject" value="Mercury"> Mercury</label>
+        <label><input type="radio" name="celestialObject" value="Venus"> Venus</label>
+        <label><input type="radio" name="celestialObject" value="Earth" checked> Earth</label>
+        <label><input type="radio" name="celestialObject" value="Mars"> Mars</label>
+        <label><input type="radio" name="celestialObject" value="Jupiter"> Jupiter</label>
+        <label><input type="radio" name="celestialObject" value="Saturn"> Saturn</label>
+        <label><input type="radio" name="celestialObject" value="Uranus"> Uranus</label>
+        <label><input type="radio" name="celestialObject" value="Neptune"> Neptune</label>
+        <label><input type="radio" name="celestialObject" value="Star"> Star</label>
+        <label><input type="radio" name="celestialObject" value="BlackHole"> Black Hole</label>
+    </div>
+
+    <button onclick="calculateGravity()">Calculate Gravity</button>
+    <button onclick="calculateSpeed()">Calculate Speed</button>
+    <button onclick="calculateDistance()">Calculate Distance</button>
+    <button onclick="calculateWeight()">Calculate Weight</button>
+    <button onclick="calculateTime()">Calculate Time</button>
+
+    <div id="resultBox">
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateGravity() {
+            const selectedCelestialObject = getSelectedCelestialObject();
+            const gravity = getGravityForCelestialObject(selectedCelestialObject);
+            displayResult(`Gravity on ${selectedCelestialObject}: ${gravity} m/s²`);
+        }
+
+        function calculateSpeed() {
+            const selectedCelestialObject = getSelectedCelestialObject();
+            const speed = getSpeedForCelestialObject(selectedCelestialObject);
+            displayResult(`Orbit speed around the Sun on ${selectedCelestialObject}: ${speed} m/s`);
+        }
+
+        function calculateDistance() {
+            const selectedCelestialObject = getSelectedCelestialObject();
+            const distance = getDistanceForCelestialObject(selectedCelestialObject);
+            displayResult(`Distance from ${selectedCelestialObject} to the Sun: ${distance} meters`);
+        }
+
+        function calculateWeight() {
+            const selectedCelestialObject = getSelectedCelestialObject();
+            const weight = calculateWeightOnCelestialObject(70, selectedCelestialObject); // Assuming weight on Earth is 70 kg
+            displayResult(`Your weight on ${selectedCelestialObject}: ${weight.toFixed(2)} kg`);
+        }
+
+        function calculateTime() {
+            const selectedCelestialObject = getSelectedCelestialObject();
+            const rotationPeriod = getRotationPeriodForCelestialObject(selectedCelestialObject);
+            displayResult(`One day on ${selectedCelestialObject} is approximately ${rotationPeriod} seconds`);
+        }
+
+        function getSelectedCelestialObject() {
+            return document.querySelector('input[name="celestialObject"]:checked').value;
+        }
+
+        function getGravityForCelestialObject(celestialObject) {
+            // You can customize gravity values for each celestial object
+            const gravityValues = {
+                "Mercury": 3.7,
+                "Venus": 8.87,
+                "Earth": 9.8,
+                "Mars": 3.72076,
+                "Jupiter": 24.79,
+                "Saturn": 10.44,
+                "Uranus": 8.69,
+                "Neptune": 11.15,
+                "Star": 274,
+                "BlackHole": 9.81e12 // A hypothetical value for illustration
+            };
+            return gravityValues[celestialObject] || 0; // Default to 0 if the celestial object is not found
+        }
+
+        function getSpeedForCelestialObject(celestialObject) {
+            // You can customize speed values for each celestial object
+            const speedValues = {
+                "Mercury": 47400,
+                "Venus": 35020,
+                "Earth": 29784,
+                "Mars": 24007,
+                "Jupiter": 13069,
+                "Saturn": 9660,
+                "Uranus": 6810,
+                "Neptune": 5470,
+                "Star": 0, // Speed for a star is set to 0 for illustration
+                "BlackHole": 0 // Speed for a black hole is set to 0 for illustration
+            };
+            return speedValues[celestialObject] || 0; // Default to 0 if the celestial object is not found
+        }
+
+        function getDistanceForCelestialObject(celestialObject) {
+            // You can customize distance values for each celestial object
+            const distanceValues = {
+                "Mercury": 57.9e9,
+                "Venus": 108.2e9,
+                "Earth": 149.6e9,
+                "Mars": 227.9e9,
+                "Jupiter": 778.5e9,
+                "Saturn": 1.429e12,
+                "Uranus": 2.871e12,
+                "Neptune": 4.495e12,
+                "Star": 0, // Distance for a star is set to 0 for illustration
+                "BlackHole": 0 // Distance for a black hole is set to 0 for illustration
+            };
+            return distanceValues[celestialObject] || 0; // Default to 0 if the celestial object is not found
+        }
+
+        function getRotationPeriodForCelestialObject(celestialObject) {
+            // You can customize rotation period values for each celestial object
+            const rotationPeriodValues
+            = {
+                "Mercury": 1407360,
+                "Venus": 20995200,
+                "Earth": 86400,
+                "Mars": 88642,
+                "Jupiter": 35760,
+                "Saturn": 32760,
+                "Uranus": 61200,
+                "Neptune": 57600,
+                "Star": 86400, // Assume a day for a star (for illustration)
+                "BlackHole": 0 // Rotation period for a black hole is set to 0 for illustration
+            };
+            return rotationPeriodValues[celestialObject] || 0; // Default to 0 if the celestial object is not found
+        }
+
+        function calculateWeightOnCelestialObject(weightOnEarth, celestialObject) {
+            const gravityOnCelestialObject = getGravityForCelestialObject(celestialObject);
+            return weightOnEarth * gravityOnCelestialObject / 9.8;
+        }
+
+        function displayResult(result) {
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+
+</html>

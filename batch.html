@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caps</title>
+    <link rel="stylesheet" href="batch.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <a href="merchandise.html"><canvas id="myCanvas" width="230" height="60"></canvas></a>
+          <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "50px italic";
+            var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+            gradient.addColorStop(0, "black");
+            gradient.addColorStop(1, "black");
+            ctx.fillStyle = gradient;
+            ctx.fillText("SPA__CE", 10, 50);
+          </script>
+          <div class="menu">
+            <div class="menuitems">
+            <a href="tshirt.html"><li>T-shirt</li></a>
+            <a href="#"><li>Shirts</li></a>
+            <a href="caps.html"><li>Caps</li></a>
+            <a href="batch.html"><li>Batches</li></a>
+            <!-- <input type="text" placeholder="Search header" style="border-radius: 20px;height: 1.8rem;">
+            <img src="cart_img.png" alt=""width="30px" height="30px"> -->
+            </div>
+          </div>
+      </header>
+</body>
+</html>

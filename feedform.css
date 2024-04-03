@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input[type=text] {
+  color: rgb(124, 124, 124);
+  width: 100%;
+  padding: 10px;
+  height: 28px;
+  border-radius: 4px;
+  border: .1px solid rgb(57, 57, 57);
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  padding: 13px;
+  width: 50%;
+	height: 465px;
+  margin-left: 23%;
+  align-content: center;
+}
+
+select {
+  color: rgb(124, 124, 124);
+  width: 100%;
+  padding: 11px;
+  height: 36px;
+  justify-content: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea{
+  color: rgb(124, 124, 124);
+  width: 100%;
+  padding: 11px;
+  height: 90px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label{
+  color: black;
+  padding-top: -10px;
+}
+
+.msg {
+	font-family: monospace;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #40754C;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.ca2 {
+  margin-left: 35px;
+	font-size: 15px;
+	display: inline-block;
+	text-decoration: none;
+	color: #f0f7ff;
+}
